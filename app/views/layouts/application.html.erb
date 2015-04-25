@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gitstarter</title>
+
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+  <h1><span>Gitstarter</span></h1>
+  <hr/>
+</header>
+
+<main>
+  <%= yield %>
+</main>
+
+<footer>
+  <hr/>
+  &copy; Workshop 2015
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<% unless @project.errors.empty? %>
+    <strong>Błędy</strong>
+
+    <ul>
+    <% @project.errors.full_messages.each do |error_message| %>
+        <li><%= error_message %></li>
+    <% end %>
+    </ul>
+<% end %>
+
+<%= form_for @project do |project_form| %>
+    <p>
+      <%= project_form.label :title %><br />
+      <%= project_form.text_field :title %>
+    </p>
+
+    <p>
+      <%= project_form.label :description %><br />
+      <%= project_form.text_area :description %>
+    </p>
+
+    <p>
+      <%= project_form.label :goal %><br />
+      <%= project_form.text_field :goal %>
+    </p>
+
+    <p>
+      <%= project_form.label :deadline %><br />
+      <%= project_form.datetime_select :deadline %>
+    </p>
+
+    <p>
+      <%= project_form.submit %>
+    </p>
+<% end %>

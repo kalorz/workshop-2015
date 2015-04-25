@@ -1,0 +1,11 @@
+[<a href="/projects/new">Add new Project</a>]
+
+<hr />
+
+<h2>All Projects</h2>
+
+<ul>
+  <% @projects.each do |project| %>
+      <li>[<%= project.id %>] <%= project.title %></li>
+  <% end %>
+</ul>
