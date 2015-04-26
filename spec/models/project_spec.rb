@@ -5,10 +5,10 @@ RSpec.describe Project, type: :model do
   describe '#short_description' do
 
     context 'given description longer than 30 characters' do
-      it 'truncates the description to 30 characters including ellipsis' do
+      it 'truncates the description to 30 characters after natural break' do
         project = Project.new(description: 'This is my very long description for my project')
 
-        expect(project.short_description).to eq('This is my very long descri...')
+        expect(project.short_description).to eq('This is my very long...')
       end
     end
 
