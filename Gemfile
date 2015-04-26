@@ -36,7 +36,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'rails_12'
+  # Needed on production server
+  gem 'rails_12factor'
 end
 
 group :development, :test do
