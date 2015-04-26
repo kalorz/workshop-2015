@@ -38,6 +38,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :production do
   # Needed on production server
   gem 'rails_12factor'
+
+  # Server used in production
+  gem 'puma'
 end
 
 group :development, :test do
