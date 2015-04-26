@@ -1,5 +1,7 @@
 class Project < ActiveRecord::Base
 
+  has_many :donations
+
   validates :title, :description, :goal, :deadline,
             presence: true
 
