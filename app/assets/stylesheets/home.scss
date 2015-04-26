@@ -1,6 +1,9 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Variable color
+$secondary-color: royalblue;
+
 * {
   margin:0;
   padding:0;
@@ -34,7 +37,7 @@ h2 {
   font-size: 1.8rem;
 }
 p {
-  color: royalblue;
+  color: $secondary-color;
 }
 .headline{
   text-align: center;
@@ -47,7 +50,7 @@ p {
   width: 200px;
   padding: 20px 0;
   border-radius: 2px;
-  background-color: royalblue;
+  background-color: $secondary-color;
   cursor: pointer;
   text-align: center;
 }
