@@ -59,6 +59,9 @@ group :development, :test do
   # Click through the app in tests!
   gem 'capybara'
   gem 'selenium-webdriver'
+
+  # Support setting ENV vars from .env file
+  gem 'dotenv-rails'
 end
 
 gem 'omniauth-facebook'
