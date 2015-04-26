@@ -9,6 +9,12 @@
 </head>
 <body>
 <main>
+  <% if current_user %>
+      <h1><%= current_user.first_name %></h1>
+  <% else %>
+      <%= link_to 'Facebook login', '/auth/facebook' %>
+  <% end %>
+
   <%= yield %>
 </main>
 </body>
