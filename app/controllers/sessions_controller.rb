@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 
     session[:user_id] = user.id
 
-    render text: user.inspect
+    redirect_to root_path
   end
 
 end
