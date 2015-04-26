@@ -34,6 +34,15 @@ RSpec.describe Donation, type: :model do
       end
     end
 
+    context 'given amount is equal to the project goal' do
+      it 'returns "SHUT UP AND TAKE MY MONEY!" message' do
+        project  = Project.new(goal: 77)
+        donation = project.donations.new(amount: 77)
+
+        expect(donation.thanks_message).to eq('SHUT UP AND TAKE MY MONEY!')
+      end
+    end
+
   end
 
 end
