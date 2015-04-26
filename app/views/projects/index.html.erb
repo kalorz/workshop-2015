@@ -2,16 +2,4 @@
   <%= link_to 'Add new Project', new_project_path %>
 </div>
 
-<section>
-  <% @projects.each do |project| %>
-      <article>
-        <h2><%= project.title %> </h2>
-
-        <p><%= project.description %> </p>
-
-        <div class="btn_more">
-          <%= link_to 'More', project %>
-        </div>
-      </article>
-  <% end %>
-</section>
+<section><%= render @projects %></section>
