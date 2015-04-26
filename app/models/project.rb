@@ -14,5 +14,4 @@ class Project < ActiveRecord::Base
     errors.add(:deadline, 'must be in the future') if deadline && deadline < Time.current
   end
 
-
 end
