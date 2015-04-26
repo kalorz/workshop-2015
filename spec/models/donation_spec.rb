@@ -26,20 +26,8 @@ RSpec.describe Donation, type: :model do
 
     context 'given amount greater than 50' do
       it 'returns "<3 <3 <3" message' do
-        donation = Donation.new(amount: 11)
+        donation = Donation.new(amount: 51)
         expect(donation.thanks_message).to eq('<3 <3 <3')
-
-        donation = Donation.new(amount: 50)
-        expect(donation.thanks_message).to eq('<3 <3 <3')
-      end
-    end
-
-    context 'given amount is equal to the project goal' do
-      it 'returns "SHUT UP AND TAKE MY MONEY!" message' do
-        project  = Project.new(goal: 77)
-        donation = project.donations.new(amount: 77)
-
-        expect(donation.thanks_message).to eq('SHUT UP AND TAKE MY MONEY!')
       end
     end
 
