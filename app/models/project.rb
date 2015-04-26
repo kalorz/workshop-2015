@@ -11,9 +11,7 @@ class Project < ActiveRecord::Base
   validate :deadline_is_in_the_future
 
   def short_description
-
     description.truncate(30, separator: ' ')
-
   end
 
   private
