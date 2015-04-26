@@ -1,14 +1,14 @@
 <section>
   <%= form_for @project do |project_form| %>
 
-        <% errors = @project.errors.full_messages
-           unless errors.empty? %>
+      <% errors = @project.errors.full_messages
+         unless errors.empty? %>
+          <ul>
             <% errors.each do |error| %>
-              <ul>
-              <li><%= error %></li>
-             </ul>
-             <br>
-          <% end %>
+                <li><%= error %></li>
+            <% end %>
+          </ul>
+
       <% end %>
 
       <p>
@@ -30,6 +30,7 @@
         <%= project_form.label :deadline %><br/>
         <%= project_form.date_select :deadline %>
       </p>
+
       <p>
         <%= project_form.submit %>
       </p>
