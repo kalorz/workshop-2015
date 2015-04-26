@@ -6,8 +6,9 @@
       <article>
         <h2><%= project.title %> </h2>
         <p><%= project.description %> </p>
+
         <div class="btn_more">
-          <a href="/projects/show?id=<%=project.id%>">More</a>
+          <%= link_to 'More', project %>
         </div>
       </article>
   <%end%>
