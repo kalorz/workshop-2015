@@ -1,13 +1,7 @@
-<% proj_temp = request.original_url%>
-
 <section>
-  <%= puts @project %>
       <article>
-        <h2>zedez</h2>
-        <p>hd</p>
-        <div>
-          <a href="#">More</a>
-        </div>
-      </article>
+        <h2><%= @project.title%></h2>
 
+        <p><%= @project.description%></p>
+      </article>
 </section>
