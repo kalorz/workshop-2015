@@ -44,5 +44,9 @@ group :development, :test do
 
   # Behaviour Driven Development for Ruby
   gem 'rspec-rails'
+
+  # Click through the app in tests!
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
