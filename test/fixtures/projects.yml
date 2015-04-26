@@ -5,11 +5,11 @@ one:
   description: MyText
   goal: 1
   raised: 1
-  deadline: 2015-04-25 12:44:21
+  deadline: 2015-04-25 12:43:17
 
 two:
   title: MyString
   description: MyText
   goal: 1
   raised: 1
-  deadline: 2015-04-25 12:44:21
+  deadline: 2015-04-25 12:43:17

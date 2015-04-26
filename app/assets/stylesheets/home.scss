@@ -1,13 +1,62 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+* {
+  margin:0;
+  padding:0;
+  border: 0 none;
+  position: relative;
+}
+html {
+  height: 100%;
+  margin: 0;
+}
 body {
-  font-family: 'Roboto', sans-serif;
+  background: url("bg.jpg") no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 300;
+}
+main {
+  margin: 0 auto;
+  width: 1140px;
+}
+h1 {
+  margin: 100px 0 50px 0;
+  font-size: 6rem;
+  line-height: 7rem;
+  font-weight: 200;
+  color: #fff;
+  text-align: center;
+}
+h2 {
+  margin: 20px 0;
+  font-size: 1.8rem;
 }
 
+.headline{
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0 100px 0;
+}
+.btn_box {
+  margin: 0 auto;
+  width: 200px;
+  padding: 20px 0;
+  border-radius: 2px;
+  background-color: royalblue;
+  cursor: pointer;
+  text-align: center;
+}
+.btn_box a{
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 20px 0;
+}
 .field_with_errors {
   input {
-    border-color: red;
+    border: 2px red solid;
   }
 }

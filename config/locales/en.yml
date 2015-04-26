@@ -24,4 +24,5 @@ en:
     label:
       project:
         title: 'Project Title'
+
   hello: "Hello world"
