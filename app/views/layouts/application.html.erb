@@ -12,9 +12,11 @@
   <% if current_user %>
       <h1><%= current_user.first_name %></h1>
   <% else %>
-      <%= link_to 'Facebook login', '/auth/facebook' %>
-  <% end %>
+      <div class="btn_facebook">
+      <a href="/auth/facebook"> <img src="https://www.tinylightbulbs.com/assets/login-with-facebook-20a673c91b68a2e5d8973d8b8fb5a013.png" alt="Facebook login" border="0" width="100"/></a>
 
+      </div>
+  <% end %>
   <%= yield %>
 </main>
 </body>
